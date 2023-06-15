@@ -1,0 +1,46 @@
+ 1709  pip install dvc==2.58.2
+
+ 1711  dvc status
+ 1712  dvc init
+
+
+ 1715  git status
+ 1716  git add .
+ 1717  git commit -m 'dvc create'
+ 1718  git push
+ 
+ 
+ 1721  dvc add lab4/Data
+ 1722  git add lab4/.gitignore lab4/Data.dvc
+ 1723  dvc remote add 'gdisk' gdrive://1OW1Uc_bmK2P3alN5NWaztRu9VzoZZqqJ
+ 1724  dvc push -r gdisk
+  
+ 1726  dvc add lab4/Data
+ 1727  git add lab4/.gitignore lab4/Data.dvc
+ 1728  git commit -m 'dvc'
+ 1729  git push
+ 1730  dvc push -r gdisk
+ 
+   ￼
+ 1733  dvc add lab4/Data
+ 1734  git add lab4/.gitignore lab4/Data.dvc
+ 1735  git add .
+ 1736  git commit -m 'dvc_2'
+ 1737  git push
+ 1738  dvc push -r gdisk
+ 1739  dvc add lab4/Data
+ 1740  git add .
+ 1741  git commit -m 'dvc_3'
+ 1742  git push
+ 1743  dvc push -r gdisk
+ 1744  dvc add lab4/Data
+ 1745  git add .
+ 1746  git commit -m 'dvc_4'
+ 1747  git push
+ 1748  dvc push -r gdisk
+ 1749  git status
+ 1750  git add .
+ 1751  git commit -m 'final'
+ 1752  git push
+
+ 1754  history >> history.txt
